@@ -1,0 +1,196 @@
+body{
+    font-family: Arial; 
+    font-size: 15px;;
+    margin: auto;
+    width: 90vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+header span {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image{
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    /* margin-right: 15px; */
+}
+
+.menu-image{
+    /* width: 100%; */
+    height: 30px;
+}
+
+#slider-container{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.slider-image{
+    width: 1000px;
+    height: 632px;
+}
+.atitle{
+    color: rgb(92, 54, 26);
+    font-size: 25px;
+    padding: 28px 80px;
+}
+
+#discoveries-container{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(1, 225px);
+    grid-template-columns: repeat(4, 225px);
+    column-gap: 10px;
+}
+.discovery-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.discovery-description{
+    margin: 0;
+    text-align: justify;
+}
+
+#greats-container{
+    display: grid;
+    justify-content: center;
+    /* grid-template-rows: repeat(1, 225px); */
+    /* grid-template-columns: repeat(3, 225px); */
+    /* column-gap: 20px; */
+}
+
+#news-container{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(1, 225px);
+    grid-template-columns: repeat(3, 225px);
+    column-gap: 20px;
+}
+.news-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.news-description{
+    margin: 0;
+    text-align: justify;
+}
+
+@media screen and (min-width:900px) and (max-width:1200px){
+    .slider-image{
+        width: 825px;
+        height: 521px;
+    }
+    .atitle{
+        font-size: 20px;
+        padding: 28px 60px;
+    }    
+    #discoveries-container{
+        grid-template-rows: repeat(1, 200px);
+        grid-template-columns: repeat(4, 200px);
+        width: 830px !important;
+        margin: auto;
+    }
+    #news-container{
+        grid-template-rows: repeat(1, 200px);
+        grid-template-columns: repeat(3, 200px);
+        width: 640px !important;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px){
+    body{
+        font-size: 12px !important;
+    }
+    .logo-image{
+        height: 50px !important;
+    }
+    .menu-image{
+        height: 20px !important;
+    }
+    .slider-image{
+        width: 550px !important;
+        height: 348px !important;
+    }
+    .atitle{
+        font-size: 15px;
+        padding: 28px 45px;
+    }    
+    #discoveries-container{
+        grid-template-rows: repeat(1, 125px);
+        grid-template-columns: repeat(4, 125px);
+        width: 530px !important;
+        margin: auto;
+    }
+    #news-container{
+        grid-template-rows: repeat(1, 125px);
+        grid-template-columns: repeat(3, 125px);
+        width: 415px !important;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:600px){
+    body{
+        font-size: 9px !important;
+    }
+    .logo-image{
+        height: 30px !important;
+    }
+    .menu-image{
+        height: 14px !important;
+    }
+    .slider-image{
+        width: 225px !important;
+        height: 142px !important;
+        margin: auto;
+    }
+    .atitle{
+        font-size: 10px;
+        padding: 28px 40px;
+    }
+    #discoveries-container{
+        grid-template-rows: repeat(1, 70px);
+        grid-template-columns: repeat(4, 70px);
+        width: 280px !important;
+        margin: auto;
+    }
+    #news-container{
+        grid-template-rows: repeat(2, 70px);
+        grid-template-columns: repeat(3, 70px);
+        width: 250px !important;
+        margin: auto;
+    }
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    align-items: top;
+    bottom: 0;
+    justify-content: space-between;
+}
+
+footer nav {
+    margin-top: 7px;
+    display: flex;
+    align-items: top;
+    padding: 0;
+    /* margin-right: 15px; */
+}
