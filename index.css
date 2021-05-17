@@ -40,20 +40,16 @@ header nav {
     position: relative;
     margin: auto;
 }
-
 #slider-container .slide{
     display: none;
 }
-    
 body #slider-container #part0{
     display: inline;
 }
-
 .slider-image{
     width: 1000px;
     height: 632px;
-} 
-    
+}   
 #slider-container .press {
     cursor: pointer;
     position: absolute;
@@ -62,11 +58,9 @@ body #slider-container #part0{
     color:rgb(128, 86, 59);
     font-size: 35px; 
 }
-
 #slider-container #next {
     right: 0;
 }
-
 #slider-container #previous {
     left: 0;
 }
@@ -97,9 +91,6 @@ body #slider-container #part0{
 #greats-container{
     display: grid;
     justify-content: center;
-    /* grid-template-rows: repeat(1, 225px); */
-    /* grid-template-columns: repeat(3, 225px); */
-    /* column-gap: 20px; */
 }
 
 #news-container{
@@ -220,5 +211,4 @@ footer nav {
     display: flex;
     align-items: top;
     padding: 0;
-    /* margin-right: 15px; */
 }
