@@ -37,12 +37,40 @@ header nav {
 #slider-container{
     display: grid;
     justify-content: center;
-    margin-bottom: 100px;
+    position: relative;
+    margin: auto;
 }
+
+#slider-container .slide{
+    display: none;
+}
+    
+body #slider-container #part0{
+    display: inline;
+}
+
 .slider-image{
     width: 1000px;
     height: 632px;
+} 
+    
+#slider-container .press {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 100wv;
+    color:rgb(128, 86, 59);
+    font-size: 35px; 
 }
+
+#slider-container #next {
+    right: 0;
+}
+
+#slider-container #previous {
+    left: 0;
+}
+
 .atitle{
     color: rgb(92, 54, 26);
     font-size: 25px;
